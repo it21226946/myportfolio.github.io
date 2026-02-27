@@ -379,14 +379,25 @@ section {
 }
 
 .logo {
-    font-family: var(--fh);
-    font-size: 1.6rem;
-    font-weight: 900;
-    letter-spacing: -1px
+    font-family: var(--fm);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    transition: transform var(--t) var(--ease);
 }
 
-.logo span {
-    color: var(--indigo)
+.logo:hover {
+    transform: scale(1.03);
+    color: var(--text);
+}
+
+.logo .tag {
+    color: var(--cyan);
+    opacity: 0.8;
+    font-weight: 400;
 }
 
 .nav-links {
@@ -2113,13 +2124,18 @@ footer {
 }
 
 .footer-logo {
-    font-family: var(--fh);
+    font-family: var(--fm);
     font-size: 1.5rem;
-    font-weight: 900
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 
-.footer-logo span {
-    color: var(--indigo)
+.footer-logo .tag {
+    color: var(--indigo);
+    opacity: 0.8;
+    font-weight: 400;
 }
 
 .footer-copy {
